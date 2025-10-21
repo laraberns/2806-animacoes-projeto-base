@@ -1,27 +1,43 @@
-# 2806Memorando
+# 🧾 Lista de Tarefas com Animações — Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Projeto desenvolvido com o objetivo de **aprender e praticar animações no Angular**, explorando os principais conceitos do módulo `@angular/animations` como **triggers**, **states**, **styles**, **transitions** e **animate**.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🎯 Objetivo do Projeto
 
-## Code scaffolding
+Criar uma aplicação simples de **lista de tarefas (To-Do List)**, onde cada tarefa pode ser **adicionada, listada e animada** de forma fluida e responsiva, aplicando transições suaves entre estados diferentes dos elementos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## ⚙️ Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular** 17+
+- **TypeScript**
+- **@angular/animations**
+- **HTML5 / CSS3**
+- **Angular CLI**
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🧩 Conceitos Aplicados
 
-## Running end-to-end tests
+O foco do projeto foi o aprendizado e a prática de animações, utilizando os seguintes conceitos:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `trigger()` → Define o nome da animação e os estados que ela controla.  
+- `state()` → Define os estilos que um elemento assume em determinado estado.  
+- `style()` → Define as propriedades CSS aplicadas ao elemento durante a animação.  
+- `transition()` → Controla a passagem entre dois estados (por exemplo: `default => highlighted`).  
+- `animate()` → Define a **duração** e o **timing** da animação (por exemplo: `animate('200ms ease-in')`).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🧠 Aprendizados
+
+Durante o desenvolvimento, foram explorados:
+
+- A criação e uso de **animações declarativas** com o módulo de animações do Angular.
+- O uso de **transições suaves** entre estados de um componente.
+- Boas práticas de **organização de componentes** e **CSS modularizado**.
+- Integração entre **eventos do template** e **lógica de animação** no TypeScript.
+
+---

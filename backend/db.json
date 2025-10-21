@@ -27,13 +27,6 @@
       "categoria": "Casa",
       "statusFinalizado": false,
       "prioridade": "Alta"
-    },
-    {
-      "id": 6,
-      "descricao": "Ler",
-      "statusFinalizado": false,
-      "categoria": "Estudos",
-      "prioridade": "Alta"
     }
   ]
 }
