@@ -11,33 +11,13 @@ import {
   transition,
   trigger,
 } from '@angular/animations';
+import { highlightedStateTrigger } from '../animations';
 
 @Component({
   selector: 'app-lista-tarefas',
   templateUrl: './lista-tarefas.component.html',
   styleUrls: ['./lista-tarefas.component.css'],
-  animations: [
-    trigger('highlightedState', [
-      state(
-        'default',
-        style({
-          border: '2px solid #B2B6FF',
-          transform: 'scale(1)',
-          filter: 'brightness(100%)',
-          transition: 'all 0.2s ease-out',
-        })
-      ),
-      state(
-        'highlighted',
-        style({
-          border: '4px solid #B2B6FF',
-          transform: 'scale(1.02)',
-          filter: 'brightness(92%)',
-        })
-      ),
-      transition('default <=> highlighted', animate('200ms ease-in-out')),
-    ]),
-  ],
+  animations: [[highlightedStateTrigger]]
 })
 export class ListaTarefasComponent implements OnInit {
   listaTarefas: Tarefa[] = [];
