@@ -1,5 +1,6 @@
 import {
   animate,
+  keyframes,
   state,
   style,
   transition,
@@ -49,6 +50,20 @@ export const shownStateTrigger = trigger('shownState', [
       style({
         opacity: 0,
       })
+    ),
+  ]),
+]);
+
+export const checkPulseTrigger = trigger('checkPulse', [
+  transition('* => clicked', [
+    animate(
+      '300ms ease-in-out',
+      keyframes([
+        style({ transform: 'scale(1)', offset: 0 }),
+        style({ transform: 'scale(1.2)', offset: 0.3 }),
+        style({ transform: 'scale(0.9)', offset: 0.6 }),
+        style({ transform: 'scale(1)', offset: 1 }),
+      ])
     ),
   ]),
 ]);

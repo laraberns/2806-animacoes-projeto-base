@@ -92,7 +92,8 @@
                 ? 'icone-checked'
                 : 'icone-unchecked'
             "
-            (click)="finalizarTarefa(tarefa.id)"
+            (click)="finalizarTarefa(tarefa.id, i)"
+            [@checkPulse]="clickedIndex === i ? 'clicked' : 'idle'"
           ></button>
         </p>
       </div>
